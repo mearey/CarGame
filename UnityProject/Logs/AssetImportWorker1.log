@@ -15,7 +15,7 @@ C:/Users/meare/Desktop/Cargame/UnityProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52510
+57762
 Successfully changed project path to: C:/Users/meare/Desktop/Cargame/UnityProject
 C:/Users/meare/Desktop/Cargame/UnityProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/meare/Desktop/Cargame/UnityProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 90.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 84.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -63,93 +63,93 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010543 seconds.
+Registered in 0.009593 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 97.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 101.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.656 seconds
+- Completed reload, in  0.670 seconds
 Domain Reload Profiling:
-	ReloadAssembly (657ms)
-		BeginReloadAssembly (73ms)
+	ReloadAssembly (671ms)
+		BeginReloadAssembly (77ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (468ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (479ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (94ms)
+			SetupTypeCache (97ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (289ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (304ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (97ms)
+				RefreshPlugins (102ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (135ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008041 seconds.
+Registered in 0.007676 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\meare\Desktop\Cargame\UnityProject\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\meare\Desktop\Cargame\UnityProject\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 80.15 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 83.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Completed reload, in  1.147 seconds
+- Completed reload, in  1.219 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1148ms)
-		BeginReloadAssembly (126ms)
+	ReloadAssembly (1219ms)
+		BeginReloadAssembly (120ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (909ms)
-			LoadAssemblies (91ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (976ms)
+			LoadAssemblies (99ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (248ms)
+			SetupTypeCache (275ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (483ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (504ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (80ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (268ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3688 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 28 unused Assets / (34.0 KB). Loaded Objects now: 4302.
 Memory consumption went from 235.2 MB to 235.1 MB.
-Total: 3.361100 ms (FindLiveObjects: 0.546200 ms CreateObjectMapping: 0.135200 ms MarkObjects: 2.654700 ms  DeleteObjects: 0.024200 ms)
+Total: 3.885300 ms (FindLiveObjects: 0.464300 ms CreateObjectMapping: 0.417500 ms MarkObjects: 2.962600 ms  DeleteObjects: 0.039000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,3 +162,169 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1224882.756667 seconds.
+  path: Assets/Assets/Environment/landmarks/CquayTOP.PNG
+  artifactKey: Guid(5f261bcbed0ae0442a94834afcb9fd37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/CquayTOP.PNG using Guid(5f261bcbed0ae0442a94834afcb9fd37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7daf5a1a7cedb6e5c7aef50280ffebb') in 0.096853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/Environment/landmarks/AusTower.png
+  artifactKey: Guid(be7a3ccb2345ce44b9fc6d01dd97b635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/AusTower.png using Guid(be7a3ccb2345ce44b9fc6d01dd97b635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e98941f94b82933319abd1e581836eb') in 0.024871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/Environment/landmarks
+  artifactKey: Guid(a4c20f7a9e2f01e47943a912f29a20c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks using Guid(a4c20f7a9e2f01e47943a912f29a20c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20c4dc4d41eba3cecf4b68e85a779761') in 0.010684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/Environment/image0 (3) (1).jpg
+  artifactKey: Guid(0eac035cddea72844a86bdf6b01d7aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/image0 (3) (1).jpg using Guid(0eac035cddea72844a86bdf6b01d7aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c4752575dd67aaa1de0390c849d925') in 0.021573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Environment/landmarks/buildiungtop.PNG
+  artifactKey: Guid(4c33d1c339e2d14479583c0554dd1718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/buildiungtop.PNG using Guid(4c33d1c339e2d14479583c0554dd1718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43510a2ea5f7bd7f04ebb293a5095b5') in 0.016857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/Environment/preview16.jpg
+  artifactKey: Guid(2854744102131a04f93b6cd6dde2bcb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/preview16.jpg using Guid(2854744102131a04f93b6cd6dde2bcb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75114cc7d6c0fda98a02e7b7305c412b') in 0.017451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Assets/Environment/landmarks/greybricks.jpg
+  artifactKey: Guid(3283b965825bc9748873b4cf17c05320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/greybricks.jpg using Guid(3283b965825bc9748873b4cf17c05320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd418dd212d46bec0967bd60f12736736') in 0.017657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets/Environment/landmarks/Vbricks.jpg
+  artifactKey: Guid(8b546deb79a9b0143b68366262741d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/Vbricks.jpg using Guid(8b546deb79a9b0143b68366262741d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9c366161a9a4764537df22db3bfc40') in 0.020627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Environment/landmarks/woodplanks.jpg
+  artifactKey: Guid(d25f9ee32ac85b449b98169599b29bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/woodplanks.jpg using Guid(d25f9ee32ac85b449b98169599b29bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22cc9db4afb6757a886b6081e965e82') in 0.017139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Environment/landmarks/circular quay.fbx
+  artifactKey: Guid(576b5363808c03148919ce208c0a18d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/circular quay.fbx using Guid(576b5363808c03148919ce208c0a18d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f4a0b6367ba27d5e036b68282cfb8d') in 0.319680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Assets/Environment/landmarks/glassseethrough.mat
+  artifactKey: Guid(5b3b1a5a9d576954a95ae4673e7f7d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/glassseethrough.mat using Guid(5b3b1a5a9d576954a95ae4673e7f7d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ac3ab37a092c2fe863c169a9c93829') in 0.034029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Environment/landmarks/preview16.jpg
+  artifactKey: Guid(c87c4be5fef702745aed73d2a64eb1c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/preview16.jpg using Guid(c87c4be5fef702745aed73d2a64eb1c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf4a37d09d93220db89afd53e6bf5ce') in 0.014348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets
+  artifactKey: Guid(167d5939f76019845b722dfe8a1ffdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets using Guid(167d5939f76019845b722dfe8a1ffdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91c28e772bfa7c554a28e96d822bc06') in 0.009106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Environment/599-Lexington-Avenue (1).jpg
+  artifactKey: Guid(dbfefa5518dac254e9cd6bb75d049c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/599-Lexington-Avenue (1).jpg using Guid(dbfefa5518dac254e9cd6bb75d049c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20de868324ac536f371a6e907ab5a72') in 0.016484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 103.416081 seconds.
+  path: Assets/Assets/Environment/landmarks/Circular_Quay_International_Wharf (1).jpg
+  artifactKey: Guid(f3f813edc7cb2f14297b2d3758fff977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/Circular_Quay_International_Wharf (1).jpg using Guid(f3f813edc7cb2f14297b2d3758fff977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc38967fc652e3f670eb8ce30a258525') in 0.017885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Assets/Environment/landmarks/Museum_of_Contemporary_Art,_Sydney,_Australia.jpg
+  artifactKey: Guid(799b25c6b9d586a48b6fb3439465b1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/Museum_of_Contemporary_Art,_Sydney,_Australia.jpg using Guid(799b25c6b9d586a48b6fb3439465b1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7759dc9e9a814d0989e29ae7dd6809b') in 0.021668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Environment/landmarks/woodplanks 1.jpg
+  artifactKey: Guid(f0d1b7e1a102f3648abc650f7bddd937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/woodplanks 1.jpg using Guid(f0d1b7e1a102f3648abc650f7bddd937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9738bf38de3d8c1b9458580bbd2558') in 0.017188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Environment/landmarks/smooth+sand.jpg
+  artifactKey: Guid(ef33c3f61294aa040a6abb8f3df8aa54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/smooth+sand.jpg using Guid(ef33c3f61294aa040a6abb8f3df8aa54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1953e6cfeda7916ff3b8046ec4b49035') in 0.020059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Environment/landmarks/CquayTOP 1.PNG
+  artifactKey: Guid(6946e5073cac6614ca03fb9380973b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/CquayTOP 1.PNG using Guid(6946e5073cac6614ca03fb9380973b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43e63f5f0eeb4f1b5d876d0b36439ab') in 0.022843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets/Environment/landmarks/ConcreteBare0330_7_350.jpg
+  artifactKey: Guid(949e7c3e7993f37489a8ae6a47f9579f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/ConcreteBare0330_7_350.jpg using Guid(949e7c3e7993f37489a8ae6a47f9579f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8bde9ae45ffc296195fc951b9bce41') in 0.015890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Assets/Environment/landmarks/Shipthing.PNG
+  artifactKey: Guid(430d043663c99da4db87c0ff5105f88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/Shipthing.PNG using Guid(430d043663c99da4db87c0ff5105f88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f4bf79a5e6ade2dc24009a4e95082a') in 0.021139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Environment/landmarks/grunge-style-old-metal-background-with-stains-scratches 1.jpg
+  artifactKey: Guid(645635b97ac101141b06063c883450b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/grunge-style-old-metal-background-with-stains-scratches 1.jpg using Guid(645635b97ac101141b06063c883450b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa90df3da80d5fbbb65a5e565d1c003') in 0.017697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Environment/landmarks/OHSide.jpg
+  artifactKey: Guid(a63b84df8a8a26f48b46528b6d79cb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/OHSide.jpg using Guid(a63b84df8a8a26f48b46528b6d79cb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bdb6f5926a7a194a94025d71ffcb685') in 0.020773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Assets/Environment/landmarks/Circular_Quay_railway_station 1.jpg
+  artifactKey: Guid(ca4288f0222dd024c96e1d6fe54e8348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/Circular_Quay_railway_station 1.jpg using Guid(ca4288f0222dd024c96e1d6fe54e8348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f043d52e52c237e984a0014a5a9e1f5e') in 0.015580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Assets/Environment/landmarks/MuseuemTop.PNG
+  artifactKey: Guid(1c1fbb2d0723511489f92280eb2f7bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/MuseuemTop.PNG using Guid(1c1fbb2d0723511489f92280eb2f7bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef4aee040cc850950ccef91e4d6e7eb') in 0.015594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/Environment/landmarks/cylinderthingside.PNG
+  artifactKey: Guid(b051a4f668524194b983a5777186f4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/cylinderthingside.PNG using Guid(b051a4f668524194b983a5777186f4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca202480705d7e2102d77eb227cc1959') in 0.014304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Environment/landmarks/Vbricks 1.jpg
+  artifactKey: Guid(a0a88a286c474ff48ba9d9d18cdc8b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/landmarks/Vbricks 1.jpg using Guid(a0a88a286c474ff48ba9d9d18cdc8b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8969bf047aca953d65463719e6093f9d') in 0.015791 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
