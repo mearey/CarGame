@@ -9,6 +9,10 @@ public class CarController : MonoBehaviour
 {
     public AudioSource skidClip;
     public AudioSource engineClip;
+    public AudioSource rythm;
+    public AudioSource drums;
+    public AudioSource bass;
+    public AudioSource lead;
     public InputManager im;
     public UIManager uim;
     public List<WheelCollider> throttleWheels;
@@ -55,9 +59,21 @@ public class CarController : MonoBehaviour
         if (Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) > 1)
         {
             skidClip.pitch = rb.velocity.magnitude / 20;
+            lead.volume = Mathf.Lerp(lead.volume, rb.velocity.magnitude / 20, Time.deltaTime);
+        } else
+        {
+            lead.volume = Mathf.Lerp(lead.volume, 0.2f, Time.deltaTime);
         }
         //engine sound changes based on speed
         engineClip.pitch = rb.velocity.magnitude/20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x)/100;
+        if (rb.velocity.magnitude / 20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) / 100 < 0.2f)
+        {
+            drums.volume = 0.2f;
+        }
+        else
+        {
+            drums.volume = rb.velocity.magnitude / 20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) / 100;
+        }
 
         //brakelights
         if (im.brake || im.throttle < 0)
@@ -112,12 +128,18 @@ public class CarController : MonoBehaviour
             {
                 if (im.boost && boost > 0)
                 {
+                    //music
+                    rythm.volume = Mathf.Lerp(rythm.volume, 0.6f, Time.deltaTime);
+                    //boost fx
                     boostEmmiter.enableEmission = true;
                     wheel.motorTorque = tourque * Time.deltaTime * im.throttle * drifting * boostStrength;
                     boost -= 0.1f;
                     boosting = true;
                 } else
                 {
+                    //music
+                    rythm.volume = Mathf.Lerp(rythm.volume, 0, Time.deltaTime);
+                    //boost fx
                     boostEmmiter.enableEmission = false;
                     wheel.motorTorque = tourque * Time.deltaTime * im.throttle * drifting;
                     boosting = false;
