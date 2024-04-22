@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(InputManager))]
 [RequireComponent(typeof(Rigidbody))]
 public class CarController : MonoBehaviour
 {
-    public AudioSource skidClip;
-    public AudioSource engineClip;
-    public AudioSource rythm;
-    public AudioSource drums;
-    public AudioSource bass;
-    public AudioSource lead;
     public InputManager im;
     public UIManager uim;
     public List<WheelCollider> throttleWheels;
@@ -36,6 +31,8 @@ public class CarController : MonoBehaviour
     public float maxBoost = 100f;
     public Slider boostBar;
     public bool boosting = false;
+    public bool driftingBool = false;
+    public bool driving = false;
     void Start()
     {
         im = GetComponent<InputManager>();
@@ -48,7 +45,6 @@ public class CarController : MonoBehaviour
         sideWheelFriction = throttleWheels[1].sidewaysFriction.stiffness;
         forwardWheelFriction = throttleWheels[1].forwardFriction.stiffness;
 
-        engineClip.Play();
     }
 
     void Update()
@@ -58,21 +54,22 @@ public class CarController : MonoBehaviour
         //drift sound changes based on angle
         if (Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) > 1)
         {
-            skidClip.pitch = rb.velocity.magnitude / 20;
-            lead.volume = Mathf.Lerp(lead.volume, rb.velocity.magnitude / 20, Time.deltaTime);
+            driftingBool = true;
+            
         } else
         {
-            lead.volume = Mathf.Lerp(lead.volume, 0.2f, Time.deltaTime);
+            driftingBool = false;
+            
         }
         //engine sound changes based on speed
-        engineClip.pitch = rb.velocity.magnitude/20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x)/100;
+        
         if (rb.velocity.magnitude / 20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) / 100 < 0.2f)
         {
-            drums.volume = 0.2f;
+            driving = false;
         }
         else
         {
-            drums.volume = rb.velocity.magnitude / 20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) / 100;
+            driving = true;
         }
 
         //brakelights
@@ -119,17 +116,15 @@ public class CarController : MonoBehaviour
                 wheel.sidewaysFriction = friction;
                 wheel.forwardFriction = forwardFriction;
                 drifting = 1.1f;
-                if (!skidClip.isPlaying)
+                /*if (!skidClip.isPlaying)
                 {
                     skidClip.Play();
-                }
+                }*/
             }
             else
             {
                 if (im.boost && boost > 0)
                 {
-                    //music
-                    rythm.volume = Mathf.Lerp(rythm.volume, 0.6f, Time.deltaTime);
                     //boost fx
                     boostEmmiter.enableEmission = true;
                     wheel.motorTorque = tourque * Time.deltaTime * im.throttle * drifting * boostStrength;
@@ -137,8 +132,6 @@ public class CarController : MonoBehaviour
                     boosting = true;
                 } else
                 {
-                    //music
-                    rythm.volume = Mathf.Lerp(rythm.volume, 0, Time.deltaTime);
                     //boost fx
                     boostEmmiter.enableEmission = false;
                     wheel.motorTorque = tourque * Time.deltaTime * im.throttle * drifting;
@@ -152,7 +145,7 @@ public class CarController : MonoBehaviour
                     wheel.sidewaysFriction = friction;
                     wheel.forwardFriction = forwardFriction;
                     drifting = 1f;
-                    skidClip.Stop();
+                    //skidClip.Stop();
                 }
             }
             //DRIFTING MARKS
@@ -179,11 +172,7 @@ public class CarController : MonoBehaviour
             }
             uim.changeText
             (
-            "slip: " + hit.forwardSlip + "\n" +
-            "sideslip: " + hit.sidewaysSlip + "\n" +  
-            "side velocity: " + Mathf.RoundToInt(transform.InverseTransformDirection(rb.velocity).x) + "\n" +
-            "airborn?: " + airborn + "\n" +
-            "tilt: " + rb.rotation.eulerAngles.z
+            ""
             );
         }
         //ANTI ROLL TURNING

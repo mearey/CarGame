@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4304270032283949211
+--- !u!1001 &805045258588078299
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13,15 +13,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e42ace33c39dd584da2139fc2113ced0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.022875
+      value: -3.0490422
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e42ace33c39dd584da2139fc2113ced0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39
+      value: -0.8899938
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e42ace33c39dd584da2139fc2113ced0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.22
+      value: -4.929193
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e42ace33c39dd584da2139fc2113ced0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -57,21 +57,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42ace33c39dd584da2139fc2113ced0, type: 3}
---- !u!1 &3997717746084865482 stripped
+--- !u!1 &571237747236044170 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e42ace33c39dd584da2139fc2113ced0, type: 3}
-  m_PrefabInstance: {fileID: 4304270032283949211}
+  m_PrefabInstance: {fileID: 805045258588078299}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &868570124417869040
+--- !u!65 &4739891842564270779
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3997717746084865482}
+  m_GameObject: {fileID: 571237747236044170}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.020218626, y: 0.021740757, z: 0.00089675514}
-  m_Center: {x: 0.00010931259, y: 0.000105500665, z: -0.00044837757}
+  m_Size: {x: 0.020985387, y: 0.021740757, z: 0.00089675514}
+  m_Center: {x: 0.00049269386, y: 0.000105500665, z: -0.00044837757}
