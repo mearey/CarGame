@@ -42,7 +42,11 @@ public class audioController : MonoBehaviour
             {
                 skidClip.pitch = rb.velocity.magnitude / 20;
                 lead.volume = Mathf.Lerp(lead.volume, rb.velocity.magnitude / 20, Time.deltaTime * musicShiftSpeed);
-                skidClip.Play();
+                if (!skidClip.isPlaying)
+                {
+                    skidClip.Play();
+                }
+
             }
             else
             {

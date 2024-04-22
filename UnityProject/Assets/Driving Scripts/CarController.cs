@@ -51,18 +51,6 @@ public class CarController : MonoBehaviour
     {
         //update boost on UI
         boostBar.value = boost/maxBoost;
-        //drift sound changes based on angle
-        if (Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) > 1)
-        {
-            driftingBool = true;
-            
-        } else
-        {
-            driftingBool = false;
-            
-        }
-        //engine sound changes based on speed
-        
         if (rb.velocity.magnitude / 20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) / 100 < 0.2f)
         {
             driving = false;
@@ -116,10 +104,7 @@ public class CarController : MonoBehaviour
                 wheel.sidewaysFriction = friction;
                 wheel.forwardFriction = forwardFriction;
                 drifting = 1.1f;
-                /*if (!skidClip.isPlaying)
-                {
-                    skidClip.Play();
-                }*/
+                driftingBool = true;
             }
             else
             {
@@ -145,7 +130,7 @@ public class CarController : MonoBehaviour
                     wheel.sidewaysFriction = friction;
                     wheel.forwardFriction = forwardFriction;
                     drifting = 1f;
-                    //skidClip.Stop();
+                    driftingBool = false;
                 }
             }
             //DRIFTING MARKS
@@ -172,7 +157,7 @@ public class CarController : MonoBehaviour
             }
             uim.changeText
             (
-            ""
+            "Score: "
             );
         }
         //ANTI ROLL TURNING
