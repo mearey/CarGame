@@ -15,6 +15,17 @@ public class audioController : MonoBehaviour
     public AudioHighPassFilter hiPassFilter;
     public Rigidbody rb;
     public float musicShiftSpeed = 0.1f;
+    public ScoreController scoreController;
+    public AudioClip rythmA;
+    public AudioClip rythmB;
+    public AudioClip dumsA;
+    public AudioClip drumsB;
+    public AudioClip bassA;
+    public AudioClip bassB;
+    public AudioClip leadA;
+    public AudioClip leadB;
+    public AudioClip transitionAB;
+    public string musicTrack = "A";
     // Start is called before the first frame update
     void Start()
     {
@@ -24,14 +35,37 @@ public class audioController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //switch to other song if combo is high enough
+        if (scoreController.combo >= 10 && musicTrack == "A" && rythm.time >= rythm.clip.length-0.1f)
+        {
+            drums.Stop();
+            lead.Stop();
+            bass.Stop();
+            rythm.clip = transitionAB;
+            rythm.Play();
+            musicTrack = "T";
+
+
+        }
+        if (musicTrack == "T" && rythm.time >= rythm.clip.length - 0.1f) {
+            rythm.clip = rythmB;
+            drums.clip = drumsB;
+            lead.clip = leadB;
+            bass.clip = bassB;
+            rythm.Play();
+            drums.Play();
+            lead.Play();
+            bass.Play();
+            musicTrack = "B";
+        }
         //engine sounds
         engineClip.pitch = rb.velocity.magnitude / 20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) / 100;
         //airborn sounds and music
         if (carCon.airborn)
         {
-            rythm.volume = Mathf.Lerp(rythm.volume, 1f, Time.deltaTime*musicShiftSpeed);
-            drums.volume = Mathf.Lerp(drums.volume, 1f, Time.deltaTime * musicShiftSpeed);
-            lead.volume = Mathf.Lerp(lead.volume, 1f, Time.deltaTime * musicShiftSpeed);
+            rythm.volume = Mathf.Lerp(rythm.volume, 1f, Time.fixedDeltaTime * musicShiftSpeed);
+            drums.volume = Mathf.Lerp(drums.volume, 1f, Time.fixedDeltaTime * musicShiftSpeed); 
+            lead.volume = Mathf.Lerp(lead.volume, 1f, Time.fixedDeltaTime * musicShiftSpeed);
             hiPassFilter.cutoffFrequency += 1;
         }
         else
@@ -41,7 +75,7 @@ public class audioController : MonoBehaviour
             if (carCon.driftingBool)
             {
                 skidClip.pitch = rb.velocity.magnitude / 20;
-                lead.volume = Mathf.Lerp(lead.volume, rb.velocity.magnitude / 20, Time.deltaTime * musicShiftSpeed);
+                lead.volume = Mathf.Lerp(lead.volume, rb.velocity.magnitude / 20, Time.fixedDeltaTime * musicShiftSpeed);
                 if (!skidClip.isPlaying)
                 {
                     skidClip.Play();
@@ -50,28 +84,28 @@ public class audioController : MonoBehaviour
             }
             else
             {
-                lead.volume = Mathf.Lerp(lead.volume, 0.2f, Time.deltaTime * musicShiftSpeed);
+                lead.volume = Mathf.Lerp(lead.volume, 0.35f, Time.fixedDeltaTime * musicShiftSpeed);
                 skidClip.Stop();
             }
 
             //boosting sounds and music
             if (carCon.boosting)
             {
-                rythm.volume = Mathf.Lerp(rythm.volume, 0.6f, Time.deltaTime * musicShiftSpeed);
+                rythm.volume = Mathf.Lerp(rythm.volume, 1f, Time.fixedDeltaTime);
             }
             else
             {
-                rythm.volume = Mathf.Lerp(rythm.volume, 0, Time.deltaTime * musicShiftSpeed);
+                rythm.volume = Mathf.Lerp(rythm.volume, 0.35f, Time.fixedDeltaTime * musicShiftSpeed);
             }
 
             //driving sounds and music
             if (carCon.driving)
             {
-                drums.volume = rb.velocity.magnitude / 20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) / 70;
+                drums.volume = rb.velocity.magnitude / 20 + Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x) / 30;
             }
             else
             {
-                drums.volume = 0.3f;
+                drums.volume = 0.5f;
             }
         }
     }

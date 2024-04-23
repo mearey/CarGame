@@ -361,6 +361,7 @@
 "Assets/Driving Scripts/InputManager.cs"
 "Assets/Scripts/audioController.cs"
 "Assets/Scripts/CameraManager.cs"
+"Assets/Scripts/ScoreController.cs"
 "Assets/Scripts/UIManager.cs"
 -langversion:9.0
 

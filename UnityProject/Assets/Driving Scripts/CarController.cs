@@ -9,7 +9,6 @@ using UnityEngine.UI;
 public class CarController : MonoBehaviour
 {
     public InputManager im;
-    public UIManager uim;
     public List<WheelCollider> throttleWheels;
     public List<WheelCollider> brakeWheels;
     public List<GameObject> steeringWheels;
@@ -155,10 +154,6 @@ public class CarController : MonoBehaviour
                     emmiter.GetComponent<ParticleSystem>().enableEmission = false;
                 }
             }
-            uim.changeText
-            (
-            "Score: "
-            );
         }
         //ANTI ROLL TURNING
         foreach (GameObject wheel in steeringWheels)
