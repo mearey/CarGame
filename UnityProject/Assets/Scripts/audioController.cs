@@ -36,7 +36,7 @@ public class audioController : MonoBehaviour
     void Update()
     {
         //switch to other song if combo is high enough
-        if (scoreController.combo >= 10 && musicTrack == "A" && rythm.time >= rythm.clip.length-0.1f)
+        if (scoreController.combo >= 10 && musicTrack == "A")
         {
             drums.Stop();
             lead.Stop();
