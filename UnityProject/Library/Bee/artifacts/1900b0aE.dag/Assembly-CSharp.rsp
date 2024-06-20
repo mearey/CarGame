@@ -357,14 +357,16 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Driving Scripts/CarController.cs"
-"Assets/Driving Scripts/InputManager.cs"
 "Assets/enemies/enemy1/movement.cs"
 "Assets/enemies/scripts/spawner.cs"
 "Assets/Scripts/audioController.cs"
 "Assets/Scripts/CameraManager.cs"
+"Assets/Scripts/Driving Scripts/CarController.cs"
+"Assets/Scripts/Driving Scripts/InputManager.cs"
+"Assets/Scripts/Driving Scripts/WeaponManager.cs"
 "Assets/Scripts/ScoreController.cs"
 "Assets/Scripts/UIManager.cs"
+"Assets/Weapons/turret/rotationScript.cs"
 -langversion:9.0
 
 /deterministic
