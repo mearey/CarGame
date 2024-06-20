@@ -359,6 +359,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Driving Scripts/CarController.cs"
 "Assets/Driving Scripts/InputManager.cs"
+"Assets/enemies/enemy1/movement.cs"
+"Assets/enemies/scripts/spawner.cs"
 "Assets/Scripts/audioController.cs"
 "Assets/Scripts/CameraManager.cs"
 "Assets/Scripts/ScoreController.cs"
