@@ -93,6 +93,9 @@ MonoBehaviour:
   baseMesh1: {fileID: 2948303861023203555}
   AllEnemies: []
   nearestEnemy: {fileID: 0}
+  projectile: {fileID: 5966248681221306751, guid: 7568fc9908d10714abae4b8de9d90517, type: 3}
+  fireRate: 3
+  timer: 60
 --- !u!1 &6143284700803576756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8513859187771203891, guid: 2467f858d649b1a4998d760d5bf2805f, type: 3}

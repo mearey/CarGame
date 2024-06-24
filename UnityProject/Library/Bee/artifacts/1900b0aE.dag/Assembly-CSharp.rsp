@@ -366,6 +366,7 @@
 "Assets/Scripts/Driving Scripts/WeaponManager.cs"
 "Assets/Scripts/ScoreController.cs"
 "Assets/Scripts/UIManager.cs"
+"Assets/Weapons/bulletMovement.cs"
 "Assets/Weapons/turret/rotationScript.cs"
 -langversion:9.0
 
